@@ -11,6 +11,8 @@ class Student(object):
     def __len__(self):
         return len(self.name)
 
+    __repr__ = __str__
+
 s = Student('Michael')
 
 print(s, s.name, len(s))
